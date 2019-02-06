@@ -1,4 +1,4 @@
-[EN] ##RPI-Wireless-Hotspot
+[EN] ## RPI-Wireless-Hotspot
 This script configures your Raspberry Pi 3 model B+ with a IP fixed and as a Access Point.
 
 <b><font size="4"> <strong> Features:<b/><font/>
