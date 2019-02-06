@@ -25,7 +25,7 @@ This script configures your Raspberry Pi 3 model B+ with a IP fixed and as a Acc
 ```
 2. Navigate to folder, and execute
 ```
-   $ sudo ./install
+   $ ./install
 ```
 3. Confirm that you agree with the changes to be made;
 
@@ -33,7 +33,7 @@ This script configures your Raspberry Pi 3 model B+ with a IP fixed and as a Acc
 
 * Navigate to folder, and execute
 ``` 
-   $ sudo ./uninstall
+   $ ./uninstall
 ```
 ## Notes and configuration:
 
@@ -71,7 +71,7 @@ Este script configura seu Raspberry Pi 3 modelo B + com um IP fixo e como um Acc
 ```
 2. Navegue até a pasta e execute
 ```
-   $ sudo ./install
+   $ ./install
 ```
 3. Confirme que você concorda com as alterações a serem feitas;
 
@@ -79,7 +79,7 @@ Este script configura seu Raspberry Pi 3 modelo B + com um IP fixo e como um Acc
 
 * Navegue até a pasta e execute
 ``` 
-   $ sudo ./uninstall
+   $  ./uninstall
 ```
 ## Notas e configuração:
 
@@ -87,4 +87,21 @@ Este script configura seu Raspberry Pi 3 modelo B + com um IP fixo e como um Acc
 * Se configurado em uma instalação existente, será feito backup de todos os arquivos de configuração atuais com a extensão ".old";
 * se necessário, retornando às configurações originais da rede Desinstalando o pacote;
 
-* Normalmente você pode encontrar a pasta Navegar no terminal assim:
+* Ao clonar o projeto o diretorio normalmente é colado em /home/pi você pode encontrar a pasta navegando no terminal assim:
+Onde estou? Para saber qual diretorio voce esta, use o comando:
+```
+   pi@youruser: pwd
+```
+O que há no diretorio? Para descobrir quais os arquivos existe no "diretório atual", digite:
+```
+    pi@youruser: ls
+```
+Para abir ou e navegar pelos diretorios use:
+```
+    pi@youruser: cd "pasta X"
+Para voltar:
+    pi@youruser: cd ..
+Para ir para a home
+  pi@youruser: cd ~
+```
+
