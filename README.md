@@ -68,7 +68,7 @@ To go /Home directorie:
 
 <hr/><hr/>
 
-## RPI-Wireless-Hotspot
+## RPI Wireless Access Point(wlan0) + Fixed IP(eth0)
 [BR]
 Este script configura seu Raspberry Pi 3 modelo B + com um IP fixo e como um Access Point.
 
