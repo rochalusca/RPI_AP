@@ -1,0 +1,41 @@
+#!/bin/bash
+# This script set your Raspberry Pi as an Access Point with fixed IP on eth0 (192.168.1.10) and wlan0 (192.168.0.1)
+
+clear
+echo "-------------------------------------------------------"
+echo "-------------------------------------------------------"
+echo "-------------------------------------------------------"
+echo "-- Remove an fixed IP and Access Point -Raspberry Pi --"
+echo "-------------------------------------------------------"
+echo "------- 42 79 4C 75 63 61 73 52 6F 63 68 61 -----------"
+echo "-------------------------------------------------------"
+echo "-------------------------------------------------------"
+
+read -r -p "[EN]This script will make changes in your RaspberryPi System, some applications can break, may require you to reinstall the image in your SD card. Are you sure that you wish to continue? [y/N] " confirm
+
+if [[ $confirm =~ ^([yY][eE][sS]|[yY])$ ]]
+then
+	clear
+	echo "Uninstalling..."
+	apt-get -y remove hostapd &> /dev/null
+	apt-get -y remove dnsmasq &> /dev/null
+echo "-------------------------------------------------------"
+echo "-------------------------------------------------------"
+echo "-------------------------------------------------------"
+echo "--------------------- DONE ----------------------------"
+echo "-------------------------------------------------------"
+echo "-------------------------------------------------------"
+echo "-------------------------------------------------------"
+echo "  "
+echo "REBOOTING in 10 SECONDS..."
+echo "  "
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "++++++++++++++++ CTRL-C to cancel ++++++++++++++++++++++"
+echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+
+	sleep 10
+	reboot
+
+	exit 0
+fi
+	exit 0
