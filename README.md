@@ -20,8 +20,9 @@ This script configures your Raspberry Pi 3 model B+ with a IP fixed and as a Acc
 ## Installation:
 
 1. In the terminal, run:
-    sudo git clone https://github.com/rochalusca/RPI_AP.git
-
+```
+    $ sudo git clone https://github.com/rochalusca/RPI_AP.git
+```
 2. Navigate to folder, and execute
 ```
    $ sudo ./install
@@ -43,11 +44,11 @@ This script configures your Raspberry Pi 3 model B+ with a IP fixed and as a Acc
 * Usually you can find the folder Navigate in the terminal like this:
 <hr/><hr/>
 
-## RPI-Wireless-Hotspot<b/><font/>
+## RPI-Wireless-Hotspot
 [BR]
 Este script configura seu Raspberry Pi 3 modelo B + com um IP fixo e como um Access Point.
 
-<b><font size="4">Características:<b/><font/>
+## Características:
 
 * O Access Point configurado inicia automaticamente na inicialização, sem necessidade de configuração extra;
 * Rede Wi-Fi configurada (wlan0) é criptografada por WPA;
@@ -65,8 +66,9 @@ Este script configura seu Raspberry Pi 3 modelo B + com um IP fixo e como um Acc
 ## Instalação:
 
 1. No terminal, execute:
-     sudo git clone https://github.com/rochalusca/RPI_AP.git
-    
+```
+    $ sudo git clone https://github.com/rochalusca/RPI_AP.git
+```
 2. Navegue até a pasta e execute
 ```
    $ sudo ./install
