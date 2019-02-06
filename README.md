@@ -1,7 +1,8 @@
 ## RPI-Wireless-Hotspot
+[EN]
 This script configures your Raspberry Pi 3 model B+ with a IP fixed and as a Access Point.
 
-<b><font size="4"> <strong> Features:<b/><font/>
+## Features:
 
 * Configured Access Point starts automatically on boot, no extra configuration necessary;
 * Configured WiFi network (wlan0) is WPA encrypted;
@@ -11,27 +12,29 @@ This script configures your Raspberry Pi 3 model B+ with a IP fixed and as a Acc
 
 * Use the Uninstall script to return the configuration as normal.
 
-<b><font size="4">Requirements:<b/><font/>
+## Requirements:
 
 * A Raspberry Pi 3 model B+ running raspbian;
 * An active ethernet connection.
 
-<b><font size="4">Installation:<b/><font/>
+## Installation:
 
 1. In the terminal, run:
     sudo git clone https://github.com/rochalusca/RPI_AP.git
 
 2. Navigate to folder, and execute
-    sudo ./install
-
+```
+   $ sudo ./install
+```
 3. Confirm that you agree with the changes to be made;
 
-<b><font size="4">Uninstalling:<b/><font/>
+## Uninstalling:
 
 * Navigate to folder, and execute
-    sudo ./uninstall
-<hr/>
-<b><font size="4"> Notes and configuration:
+``` 
+   $ sudo ./uninstall
+```
+## Notes and configuration:
 
 * This setup has been tested on a fresh and new install of raspbian;
 * If set up on an existing install then any current config files will be backed up with the extension ".old";
@@ -40,8 +43,8 @@ This script configures your Raspberry Pi 3 model B+ with a IP fixed and as a Acc
 * Usually you can find the folder Navigate in the terminal like this:
 <hr/><hr/>
 
-[BR]<b><font size="5">RPI-Wireless-Hotspot<b/><font/>
-<hr/>
+## RPI-Wireless-Hotspot<b/><font/>
+[BR]
 Este script configura seu Raspberry Pi 3 modelo B + com um IP fixo e como um Access Point.
 
 <b><font size="4">Características:<b/><font/>
@@ -54,27 +57,29 @@ Este script configura seu Raspberry Pi 3 modelo B + com um IP fixo e como um Acc
  
 * Use o script de desinstalação para retornar a configuração normalmente.
 
-<b><font size="4">Requisitos:<b/><font/>
+## Requisitos:
 
 * Um Raspberry Pi 3 modelo B + rodando raspbian;
 * Uma conexão Ethernet ativa.
 
-<b><font size="4">Instalação:<b/><font/>
+## Instalação:
 
 1. No terminal, execute:
      sudo git clone https://github.com/rochalusca/RPI_AP.git
     
 2. Navegue até a pasta e execute
-     sudo ./install
-
+```
+   $ sudo ./install
+```
 3. Confirme que você concorda com as alterações a serem feitas;
 
-<b><font size="4">Desinstalando:<b/><font/>
+## Desinstalando:
 
 * Navegue até a pasta e execute
-     sudo ./uninstall
-<hr/>
-<b><font size="4">Notas e configuração:<b/><font/>
+``` 
+   $ sudo ./uninstall
+```
+## Notas e configuração:
 
 * Esta configuração foi testada em uma nova e nova instalação de raspbian;
 * Se configurado em uma instalação existente, será feito backup de todos os arquivos de configuração atuais com a extensão ".old";
