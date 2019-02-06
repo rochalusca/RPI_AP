@@ -44,7 +44,7 @@ This script configures your Raspberry Pi 3 model B+ with a IP fixed and as a Acc
 * Usually you can find the folder Navigate in the terminal like this:
 * When cloning the project the directory is usually pasted into / home / pi you can find a folder navigating in the terminal like this:
 
-## Basic tips
+## Basic tips for beginners:
 Where am I? To find out what your directory is, use the command:
 ```
    pi@youruser: pwd
