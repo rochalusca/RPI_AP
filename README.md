@@ -1,4 +1,4 @@
-## RPI-Wireless-Hotspot
+## RPI Wireless Access Point(wlan0) + Fixed IP(eth0)
 [EN]
 This script configures your Raspberry Pi 3 model B+ with a IP fixed and as a Access Point.
 
@@ -8,7 +8,7 @@ This script configures your Raspberry Pi 3 model B+ with a IP fixed and as a Acc
 * Configured WiFi network (wlan0) is WPA encrypted;
 * Default SSID "RaspberryPi_AP" and WPA key "intit1234" can be modified during install;
 * Configured Wifi network will operate as Access Point on IP 192.168.0.1;
-* Once set up, the wired network (eth0) will still operate as fixed IP 192.168.1.10;
+* Once set up, the wired network (eth0) will still operate as fixed <b>IP 192.168.1.10<b/>;
 
 * Use the Uninstall script to return the configuration as normal.
 
