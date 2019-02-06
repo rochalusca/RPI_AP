@@ -23,7 +23,7 @@ This script configures your Raspberry Pi 3 model B+ with a IP fixed and as a Acc
 ```
     $ sudo git clone https://github.com/rochalusca/RPI_AP.git
 ```
-2. Navigate to folder, and execute
+2. Navigate to folder, and execute:
 ```
    $ ./install
 ```
@@ -31,7 +31,7 @@ This script configures your Raspberry Pi 3 model B+ with a IP fixed and as a Acc
 
 ## Uninstalling:
 
-* Navigate to folder, and execute
+* Navigate to folder, and execute:
 ``` 
    $ ./uninstall
 ```
@@ -42,6 +42,29 @@ This script configures your Raspberry Pi 3 model B+ with a IP fixed and as a Acc
 * if necessary returning to original network settings Uninstalling the package;
 
 * Usually you can find the folder Navigate in the terminal like this:
+* When cloning the project the directory is usually pasted into / home / pi you can find a folder navigating in the terminal like this:
+
+Where am I? To find out what your directory is, use the command:
+```
+   pi@youruser: pwd
+```
+What's in the directory? To find out which files there are no "current directory", type:
+```
+    pi@youruser: ls
+```
+To open or navigate directories use:
+```
+    pi@youruser: cd "pasta X"
+```
+To come back:
+```
+    pi@youruser: cd ..
+``` 
+To go /Home directorie:
+ ```
+    pi@youruser: cd ~
+```
+
 <hr/><hr/>
 
 ## RPI-Wireless-Hotspot
@@ -81,13 +104,14 @@ Este script configura seu Raspberry Pi 3 modelo B + com um IP fixo e como um Acc
 ``` 
    $  ./uninstall
 ```
-## Notas e configuração:
+## Notas e dicas:
 
 * Esta configuração foi testada em uma nova e nova instalação de raspbian;
 * Se configurado em uma instalação existente, será feito backup de todos os arquivos de configuração atuais com a extensão ".old";
 * se necessário, retornando às configurações originais da rede Desinstalando o pacote;
 
 * Ao clonar o projeto o diretorio normalmente é colado em /home/pi você pode encontrar a pasta navegando no terminal assim:
+
 Onde estou? Para saber qual diretorio voce esta, use o comando:
 ```
    pi@youruser: pwd
@@ -99,9 +123,12 @@ O que há no diretorio? Para descobrir quais os arquivos existe no "diretório a
 Para abir ou e navegar pelos diretorios use:
 ```
     pi@youruser: cd "pasta X"
-Para voltar:
-    pi@youruser: cd ..
-Para ir para a home
-  pi@youruser: cd ~
 ```
-
+Para voltar:
+```
+    pi@youruser: cd ..
+```
+Ir para a home:
+ ```
+    pi@youruser: cd ~
+```
