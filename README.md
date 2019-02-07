@@ -37,6 +37,7 @@ This script configures your Raspberry Pi 3 model B+ with a fixed IP and as a Acc
 ```
 ## Notes and configuration:
 
+* If you want another WPA passwork, it must contain **8 characters**, numbers or letter;
 * This setup has been tested on a fresh and new install of raspbian;
 * If set up on an existing install then any current config files will be backed up with the extension "**.old**";
 * If necessary returning to original network settings Uninstalling the package;
@@ -88,6 +89,7 @@ Este script configura seu Raspberry Pi 3 modelo B+ com um IP fixo e como um Acce
 ```
 ## Notas e dicas:
 
+* Se você quiser outra senha WPA, ela deve conter **8 caracteres**, números ou letras;
 * Esta configuração foi testada em uma nova instalação de raspbian, ou seja sem modificacoes anteriores;
 * Se configurado em uma instalação existente, será feito backup de todos os arquivos de configuração atuais com a extensão ".old";
 * Se necessário, retorne às configurações originais da rede Desinstalando o pacote;
