@@ -17,9 +17,36 @@ read -r -p "[EN]This script will make changes in your RaspberryPi System, some a
 if [[ $confirm =~ ^([yY][eE][sS]|[yY])$ ]]
 then
 	clear
-	echo "Uninstalling..."
-	apt-get -y remove hostapd &> /dev/null
-	apt-get -y remove dnsmasq &> /dev/null
+echo "Stop services..."
+	systemctl stop dnsmasq
+	systemctl stop hostapd
+	
+echo "Uninstalling..."
+	apt-get -y remove hostapd 
+	apt-get -y remove dnsmasq 
+	
+#deleting config files
+echo "Deleting existing config files..."
+	rm -rf /etc/dhcpcd.conf
+	rm -rf /etc/dnsmasq.conf
+	rm -rf /etc/hostapd/hostapd.conf
+	rm -rf /etc/default/hostapd
+	rm -rf /etc/sysctl.conf
+	rm -rf /etc/iptables.ipv4.nat
+	rm -rf /etc/rc.local
+	
+#check and backup .old config files
+echo "Backing up .old config files..."
+
+cp /etc/dhcpcd.conf.old /etc/dhcpcd.conf -y
+cp /etc/dnsmasq.conf.old /etc/dnsmasq.conf -y
+cp /etc/hostapd/hostapd.conf.old /etc/hostapd/hostapd.conf -y
+cp /etc/default/hostapd.old /etc/default/hostapd -y
+cp /etc/sysctl.conf.old /etc/sysctl.conf -y
+cp /etc/iptables.ipv4.nat.old  /etc/iptables.ipv4.nat -y
+cp /etc/rc.local.old  /etc/rc.local -y
+echo "--------------------- DONE ----------------------------"
+clear
 echo "-------------------------------------------------------"
 echo "-------------------------------------------------------"
 echo "-------------------------------------------------------"
