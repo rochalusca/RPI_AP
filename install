@@ -22,21 +22,21 @@ if ! [[ $confirm =~ ^([yY][eE][sS]|[yY])$ ]]
 fi
 clear
 echo "Updating..."
-	apt-get -y update &> /dev/null
+	apt-get -y update
 echo "--------------------- DONE ----------------------------"
 echo "Upgrading..."
-	apt-get -y upgrade &> /dev/null
+	apt-get -y upgrade 
 echo "--------------------- DONE ----------------------------"
 echo "Installing dnsmasq hostapd dependencies..."
-	apt-get -y install dnsmasq hostapd &> /dev/null
+	apt-get -y install dnsmasq hostapd
 echo "--------------------- DONE ----------------------------"
-
+clear
 read -r -p "Are you sure that you wish to continue? [y/N] " confirm
 if ! [[ $confirm =~ ^([yY][eE][sS]|[yY])$ ]]
 	then
 echo "Uninstalling hostapd and dnsmasq..."
-apt-get  -y remove hostapd &> /dev/null
-apt-get  -y remove dnsmasq &> /dev/null
+apt-get  -y remove hostapd
+apt-get  -y remove dnsmasq 
 echo "--------------------- DONE ----------------------------"
 	exit 3
 fi
@@ -92,7 +92,9 @@ echo ""
 echo "Loading..."
 sleep 10
 cp ./c_files/hostapd.conf /etc/hostapd
+clear
 	else
+clear
 		read -r -p "Please enter a new ssid: " _SSID
 		_PASSWORD1="0"
 		_PASSWORD2="1"
@@ -111,7 +113,7 @@ cp ./c_files/hostapd.conf /etc/hostapd
 	fi
 
 	cp ./c_files/hostapd /etc/default
-
+clear
 	echo "Configuring NAT..."
 	cp ./c_files/sysctl.conf /etc
 	echo "Configuring iptables and RC..."
@@ -125,6 +127,7 @@ cp ./c_files/hostapd.conf /etc/hostapd
 	echo "Initialising dnsmasq..."
 		service dnsmasq start
 		update-rc.d dnsmasq enable
+clear
 echo ""
 echo ""
 echo "-------------------------------------------------------"
@@ -148,4 +151,3 @@ echo "++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
 
 fi
 exit
-
