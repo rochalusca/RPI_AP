@@ -1,6 +1,7 @@
 ## RPI Wireless Access Point(wlan0) + Fixed IP(eth0)
 [EN]
 This script configures your Raspberry Pi 3 model B+ with a fixed IP and as a Access Point.
+Tested with a release of Raspbian GNU/Linux Kernal version 4.14.79-v7+.
 
 ## Features:
 
@@ -53,6 +54,7 @@ This script configures your Raspberry Pi 3 model B+ with a fixed IP and as a Acc
 ## RPI Wireless Access Point(wlan0) + Fixed IP(eth0)
 [BR]
 Este script configura seu Raspberry Pi 3 modelo B+ com um IP fixo e como um Access Point.
+Testado com a release do Raspbian GNU/Linux Kernal version 4.14.79-v7+.
 
 ## Características:
 
