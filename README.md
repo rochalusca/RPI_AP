@@ -56,7 +56,7 @@ Tested with a release of Raspbian GNU/Linux Kernal version 4.19.97-v7+.
 [BR]
 Este script configura seu Raspberry Pi 3 modelo B+ com um IP fixo e como um Access Point. 
 
-Testado com a release do Raspbian GNU/Linux Kernal version 4.14.79-v7+.
+Testado com a release do Raspbian GNU/Linux Kernal version 4.19.97-v7+.
 
 ## Características:
 
